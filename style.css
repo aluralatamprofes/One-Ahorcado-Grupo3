@@ -1,0 +1,61 @@
+body{
+    min-width: 1224px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+  }
+
+  .btn-iniciar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    
+    position: absolute;
+    width: 317px;
+    height: 114px;
+    left: 0;
+    top: 20rem;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+  
+  /* White */
+  
+    color: #FFFFFF;
+  }
+
+  .logo{
+    position: absolute;
+    left: 50px;
+    right: 37.43%;
+    top: 50px;
+    bottom: 0%;
+    width: 50px;
+    height:50px;
+  }
+
+  .canvas{
+    margin-left: 2.5rem;
+    width: 1024px;
+    height:800px
+  }
+
+  .botones-home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left:42rem;
+   }
