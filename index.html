@@ -10,21 +10,33 @@
   </head>
   <body>
     <img src="images/logo.svg" class="logo"> 
-      <div id="div-desaparece" class="botones-home">
-        <a href="#forca">
-          <!-- Buton/input -->
-          <input class="btn-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego" onclick="iniciarJuego()">
-        </a>
+    <div id="div-desaparece" class="botones-home">
+      <a href="#forca"><input class="btn-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego"  >
+      </a>
+      <button class="btn-palabra" id="nova-palavra" onclick="ensenarPantallaDeAgregarPalabra()">Agregar Palabra</button> 
+    </div>
+     <div id="agregar-palabra" class="palabra-nueva">
+      <input class="text-input" type="text" id="input-nueva-palavra"  maxlength="8" placeholder="Escriba una palabra">
+      <div class="form-group">
+        <img src="images/!.png" class="img-alerta">
+        <label for="input-texto"> Máx. 8 caracteres</label>
       </div>
-
+      <div class="botones-div">
+        <input class="btn-azul" type="submit" value="Guardar y empezar" id="btn-guardar">
+        <input class="btn-blanco" type="submit" value="Cancelar" id="btn-cancelar">
+      </div> 
+    </div>
     <div id="div-aparece-ahorcado" class="canvas">
-      <!-- Canvas -->
-      <canvas id="forca" width="1200" height="860"></canvas>
+      <canvas id="horca" height="860px" width="1200"></canvas>
       <div class="subrayado">
+
+      </div>
+      <div class="botones-div-canvas">
+        <input class="btn-azul" type="submit" value="Nuevo Juego" id="btn-nuevo-juego">
+        <input class="btn-blanco" type="submit" value="Salir" id="btn-salir">
       </div>
     </div>
-<!-- JavaScript -->
-  <script src="horca.js"></script>
-  <script src="canvas.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+     <script type="text/javascript" src="horca.js"></script> 
   </body>
 </html>

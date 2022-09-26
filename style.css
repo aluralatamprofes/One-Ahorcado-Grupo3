@@ -1,61 +1,451 @@
 body{
-    min-width: 1224px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    background: #F3F5FC;
+  min-width: 1224px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background: #F3F5FC;
+}
+
+.subrayado{
+  display:flex;
+}
+.dibujarLineas{
+  border-bottom: solid 4px #0A3871;
+  width: 30px;
+  margin: 10px;
+}
+.esconderLetra{
+  display: none;
+  font-size: 18px;
+}
+
+.btn-iniciar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  
+  position: absolute;
+  width: 317px;
+  height: 114px;
+  left: 0;
+  top: 20rem;
+  
+  /* Dark blue/dark-blue-300 */
+  
+  background: #0A3871;
+  border-radius: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+
+/* White */
+
+  color: #FFFFFF;
+}
+
+.btn-palabra{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  position: absolute;
+  width: 280px;
+  height: 67px;
+  left: 1.2rem;
+  top: 28rem; 
+  border: 1px solid #0A3871;
+  box-sizing: border-box;
+  border-radius: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  color: #0A3871;
   }
 
-  .btn-iniciar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    
+  .text-input {
+    /* Digite seu texto */
+  
     position: absolute;
-    width: 317px;
-    height: 114px;
-    left: 0;
-    top: 20rem;
-    
-    /* Dark blue/dark-blue-300 */
-    
-    background: #0A3871;
-    border-radius: 24px;
+    width: 600px;
+    height: auto;
+    left: 1.5rem;
+    top: 200px;
+  
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 22px;
-    display: flex;
-    justify-content: center;
+    font-size: 32px;
+    line-height: 150%;
+    justify-content: baseline;
+    /* identical to box height, or 48px */
+   
   
-  /* White */
+    /* Dark blue/dark-blue-300 */
   
-    color: #FFFFFF;
-  }
+    color: #0A3871;
+    background: transparent;
+    border: none;
+    text-transform:uppercase;
+    }
+  ::placeholder { color: #0A3871; text-transform:lowercase;}
+  
+  .text-input:focus { 
+      border: none;
+      outline: none;
+     }
+.logo{
+  position: absolute;
+  left: 50px;
+  right: 37.43%;
+  top: 50px;
+  bottom: 0%;
+  width: 50px;
+  height:50px;
+}
+.img-alerta{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
 
+}
+ label {
+  flex-direction: row;
+  position: static;
+  width: 300px;
+  height: 18px;
+  left: 24px;
+  top: 0px;
+  padding-left: 25px;
+  font-weight: 600;
+  
+  font-family: Inter;
+  font-style: normal;
+  font-size:18px;
+  line-height: 100%;
+
+  /* identical to box height, or 18px */
+  
+  
+  /* Gray/gray-300 */
+  color: #495057;
+ }
+.form-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  
+  position: absolute;
+  width: auto;
+  height: 18px;
+  left: 2rem;
+  top: 41rem;
+ }
+.botones-div{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 0;
+  top: 43rem;
+ }
+.btn-azul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  position: static;
+  width: 328px;
+  height: 67px;
+  left: 0px;
+  top: 0px;
+
+  background: #0A3871;
+  border-radius: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px;
+  flex-grow: 0;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 19px;
+  justify-content: center; 
+
+}
+.btn-blanco{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+
+  position: static;
+  width: 328px;
+  height: 67px;
+  left: 352px;
+  top: 0px;
+
+  /* Light gray */
+
+  background: #D8DFE8;
+  /* Dark blue/dark-blue-300 */
+
+  border: 1px solid #0A3871;
+  box-sizing: border-box;
+  border-radius: 24px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 24px;
+
+  color: #0A3871;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 19px;
+  justify-content: center;
+}
+.canvas{
+  margin-left: 2.5rem;
+  width: 1024px;
+  height:800px
+}
+.botones-div-canvas{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 28.5rem;
+  top: 760px;
+  margin-bottom: 25px;
+ }
+ .botones-home{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left:42rem;
+ }
+ .palabra-nueva{
+  position: absolute;
+  left: 30rem;
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 481px) and (max-width: 796px) {
   .logo{
-    position: absolute;
-    left: 50px;
+    left: 40px;
     right: 37.43%;
-    top: 50px;
+    top: 40px;
     bottom: 0%;
     width: 50px;
-    height:50px;
-  }
-
-  .canvas{
-    margin-left: 2.5rem;
-    width: 1024px;
-    height:800px
-  }
-
+    height: 50px;
+  } 
   .botones-home{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    left:42rem;
+    top: 16rem;
+    left: 12.2rem;
+  }
+  .btn-palabra{
+    width: 270px;
+    height: 67px;
+    top:7rem;
+    left:0.7rem;
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .btn-iniciar{
+    width: 289px;
+    height: 100px;
+    top: 0;
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .btn-azul{
+    width: 300px;
+    height: 67px;
+    left: 31.5%;
+    top: 450px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .btn-blanco{
+    width: 300px;
+    height: 67px;
+    left: 20px;
+    top: 450px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  label {
+    padding-left: 3rem;
+    font-size:18px;
    }
+   .form-group{
+    left: 1.5rem;
+    top: 710px;
+   }
+   .botones-div{
+    width: 680px;
+    height: 57px;
+    left: 0.5rem;
+    top: 740px; 
+   }
+   .text-input {
+    width: 550px;
+    height: auto;
+    left: 2rem;
+    top: 200px;
+    font-size:32px;
+     }
+     .img-alerta{
+      left: 1rem;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;   
+    }
+    .canvas{
+      margin-left: -4rem;
+      width: 739px;
+      height:800px
+    }
+    .botones-div-canvas{
+      width: 680px;
+      height: 67px;
+      left: 9rem;
+      top:64rem;
+     }
+ }
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body{
+    min-width: 375px;
+    min-height: 667px;
+  }
+  .logo{
+    left: 4.27%;
+    right: 87.2%;
+    top: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+  } 
+  .botones-home{
+    top: 16rem;
+    left: 4.2rem;
+  }
+  .btn-palabra{
+    width: 200px;
+    height: 57px;
+    left: 1rem;
+    top: 6.5rem;
+    font-size: 16px;
+    line-height: 0px;
+  }
+  .btn-iniciar{
+  width: 230px;
+  height: 90px;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  line-height: 10px;
+  }
+  .btn-azul{
+    width: 300px;
+    height: 57px;
+    left: 0;
+    top: 450px;
+    font-size: 18px;
+    line-height: 20px;    
+  }
+  .btn-blanco{
+    width: 300px;
+    height: 57px;
+    left: 0;
+    top: 480px;
+    font-size: 18px;
+    line-height: 20px;    
+  }
+  label {
+    width: 200px;
+    height: 18px;
+    left: 16px;
+    top: 451px;
+    font-size:18px;
+    padding-left: 2.5rem;
+   }
+   .form-group{
+    left: 16px;
+    top: 451px;
+   }
+   .botones-div{ 
+    flex-wrap: wrap; 
+    width: 343px;
+    height: 158px;
+    left: 0;
+    top: 30rem;    
+   }
+   .text-input { 
+    width: 343px;
+    height: auto;
+    left: 16px;
+    top: 152px;
+    font-size:32px;
+    line-height: 150%;
+    }
+    .palabra-nueva{
+      top:0.4rem;
+      left: 0.1rem;
+    }
+     .img-alerta{
+      left: 1rem;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;   
+    }
+    .canvas{
+      margin-left: 2.5rem;
+      width: 1024px;
+      height:800px
+    }
+    .botones-div-canvas{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    
+      position: absolute;
+      width: 680px;
+      height: 67px;
+      left: 28.5rem;
+      top: 760px;
+      margin-bottom: 25px;
+     }
+ }
